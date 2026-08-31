@@ -1,173 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>اتفاق عمل حر بين العميل ومقدم الخدمة(Freelance Work Agreement)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --text:#000;
-      --bg:#fff;
-      --max-width:820px;
-      --heading-size:18px;
-      --base-size:16px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      padding:40px 20px;
-      background:var(--bg);
-      color:var(--text);
-      font-family:'Tajawal',sans-serif;
-      font-size:var(--base-size);
-      line-height:1.6;
-    }
-    .sheet{max-width:var(--max-width);margin:auto;background:var(--bg);}
-    h1{text-align:center;font-size:22px;margin-bottom:20px;}
-    h2{font-size:var(--heading-size);margin-top:18px;}
-    p{margin:8px 0;}
-    .fill{display:inline-block;border-bottom:1px dashed #000;min-width:200px;height:20px;}
-    .section{margin-bottom:20px;}
-    .signature{display:flex;justify-content:space-between;margin-top:40px;}
-    .sig{width:45%;}
-    .sig p{margin:4px 0;}
-    .notes{margin-top:30px;border-top:1px solid #000;padding-top:15px;}
-    ul{margin:5px 20px;}
-    @media print{body{padding:0;}.sheet{border:none;}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium interactive memories gallery - A cinematic digital memory album">
+    <title>Memories — لحظات تستحق أن تفضل عايشة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
 </head>
 <body>
-  <div class="sheet">
-    <h1>اتفاق عمل حر بين العميل ومقدم الخدمة(Freelance Work Agreement)</h1>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
 
-    <div class="section">
-      <h2>الطرف الأول (العميل):</h2>
-      <p>الاسم: <span class="fill"></span></p>
-      <p>رقم الهوية / جواز السفر: <span class="fill"></span></p>
-      <p>البريد الإلكتروني: <span class="fill"></span></p>
-      <p>رقم الهاتف: <span class="fill"></span></p>
-
-      <h2>الطرف الثاني (مقدم الخدمة / الفريلانسر):</h2>
-      <p>الاسم: <span class="fill"></span></p>
-      <p>رقم الهوية / جواز السفر: <span class="fill"></span></p>
-      <p>البريد الإلكتروني: <span class="fill"></span></p>
-      <p>رقم الهاتف: <span class="fill"></span></p>
+    <!-- Ambient Background -->
+    <div class="ambient-bg" aria-hidden="true">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+        <div class="grain-overlay"></div>
     </div>
 
-    <div class="section">
-      <h2>البند (1): موضوع العقد</h2>
-      <p>يقوم الطرف الثاني بتنفيذ العمل التالي لصالح الطرف الأول:</p>
-      <p>وصف المشروع / الخدمة: <span class="fill" style="width:100%;"></span></p>
-      <span class="fill" style="width:100%;"></span>
-      <span class="fill" style="width:100%;"></span>
-      <p>على أن يتم إنجاز المشروع وفق المواصفات المتفق عليها بين الطرفين كتابيًا.</p>
+    <!-- Decorative Particles Container -->
+    <div class="particles-container" aria-hidden="true"></div>
+
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+        <div class="intro-content">
+            <h1 class="intro-title">Memories</h1>
+            <p class="intro-subtitle">لحظات تستحق أن تفضل عايشة معانا</p>
+            <div class="intro-line"></div>
+        </div>
     </div>
 
-    <div class="section">
-      <h2>البند (2): مدة التنفيذ</h2>
-      <p>يبدأ تنفيذ المشروع من تاريخ: ____ / ____ / ______</p>
-      <p>وينتهي في تاريخ: ____ / ____ / ______</p>
-      <p>ويجوز تمديد المدة باتفاق الطرفين كتابةً في حال وجود ظروف تستدعي ذلك.</p>
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+
+        <!-- Hero / Floating Canvas Section -->
+        <section class="hero-section" aria-label="معرض الذكريات الرئيسي">
+            <div class="floating-canvas" id="floatingCanvas">
+
+                <!-- Memory Cards -->
+                <article class="memory-card memory-1" data-index="0" tabindex="0" role="button" aria-label="فتح الصورة الأولى">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&h=650&fit=crop&q=80" 
+                             alt="قطة جميلة تنظر بعيونها الزرقاء الكبيرة" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="500" 
+                             height="650">
+                        <div class="memory-caption">
+                            <span class="caption-title">Blue Eyes</span>
+                            <span class="caption-date">September 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-2" data-index="1" tabindex="0" role="button" aria-label="فتح الصورة الثانية">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=450&h=600&fit=crop&q=80" 
+                             alt="قطة رمادية نائمة بهدوء على الوسادة" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="450" 
+                             height="600">
+                        <div class="memory-caption">
+                            <span class="caption-title">Sleepy Kitty</span>
+                            <span class="caption-date">August 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-3" data-index="2" tabindex="0" role="button" aria-label="فتح الصورة الثالثة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1495360019602-e05980bf549a?w=520&h=680&fit=crop&q=80" 
+                             alt="قطة برتقالية جميلة تجلس بفخر" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="520" 
+                             height="680">
+                        <div class="memory-caption">
+                            <span class="caption-title">Proud Ginger</span>
+                            <span class="caption-date">July 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-4" data-index="3" tabindex="0" role="button" aria-label="فتح الصورة الرابعة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=480&h=640&fit=crop&q=80" 
+                             alt="قطة سوداء وبيضاء تلعب بمرح" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="480" 
+                             height="640">
+                        <div class="memory-caption">
+                            <span class="caption-title">Playful Tuxedo</span>
+                            <span class="caption-date">June 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-5" data-index="4" tabindex="0" role="button" aria-label="فتح الصورة الخامسة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1529778873920-4da4926a7071?w=460&h=620&fit=crop&q=80" 
+                             alt="قطة صغيرة فضولية تنظر للكاميرا" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="460" 
+                             height="620">
+                        <div class="memory-caption">
+                            <span class="caption-title">Curious Kitten</span>
+                            <span class="caption-date">May 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-6" data-index="5" tabindex="0" role="button" aria-label="فتح الصورة السادسة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968ef?w=500&h=660&fit=crop&q=80" 
+                             alt="قطة بيضاء ناعمة تسترخي بسكينة" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="500" 
+                             height="660">
+                        <div class="memory-caption">
+                            <span class="caption-title">White Cloud</span>
+                            <span class="caption-date">April 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-7" data-index="6" tabindex="0" role="button" aria-label="فتح الصورة السابعة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=470&h=630&fit=crop&q=80" 
+                             alt="قطة بنية جميلة تتمدد بكسل" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="470" 
+                             height="630">
+                        <div class="memory-caption">
+                            <span class="caption-title">Stretching Brown</span>
+                            <span class="caption-date">March 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-8" data-index="7" tabindex="0" role="button" aria-label="فتح الصورة الثامنة">
+                    <div class="memory-frame">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=490&h=650&fit=crop&q=80" 
+                             alt="قطة رمادية فضولية تنظر بعيونها الواسعة" 
+                             loading="lazy" 
+                             decoding="async"
+                             width="490" 
+                             height="650">
+                        <div class="memory-caption">
+                            <span class="caption-title">Wide Eyes</span>
+                            <span class="caption-date">February 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Center Title Element -->
+                <div class="center-title" aria-hidden="true">
+                    <span class="center-title-text">Memories</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Quote Section -->
+        <section class="quote-section" aria-label="اقتباس ملهم">
+            <div class="quote-container">
+                <blockquote class="quote-text">
+                    <span class="quote-line">بعض اللحظات تستاهل تفضل عايشة.</span>
+                    <span class="quote-line-en">Some moments deserve to be remembered.</span>
+                </blockquote>
+                <div class="quote-decoration" aria-hidden="true">
+                    <span class="decoration-star">✦</span>
+                    <span class="decoration-line"></span>
+                    <span class="decoration-star">✦</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Gallery Section -->
+        <section class="secondary-gallery" aria-label="المزيد من الذكريات">
+            <div class="gallery-reveal-container">
+                <article class="reveal-card" tabindex="0" role="button" data-index="0" aria-label="فتح صورة إضافية">
+                    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&h=400&fit=crop&q=80" 
+                         alt="هامستر صغير لطيف يأكل بشهية" 
+                         loading="lazy" 
+                         decoding="async"
+                         width="600" 
+                         height="400">
+                    <div class="reveal-overlay">
+                        <span class="reveal-title">Tiny Hamster</span>
+                        <span class="reveal-date">January 2026</span>
+                    </div>
+                </article>
+                <article class="reveal-card" tabindex="0" role="button" data-index="1" aria-label="فتح صورة إضافية">
+                    <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600&h=400&fit=crop&q=80" 
+                         alt="أرنب أبيض ناعم ينظر بعيونه الحلوة" 
+                         loading="lazy" 
+                         decoding="async"
+                         width="600" 
+                         height="400">
+                    <div class="reveal-overlay">
+                        <span class="reveal-title">Soft Bunny</span>
+                        <span class="reveal-date">December 2025</span>
+                    </div>
+                </article>
+                <article class="reveal-card" tabindex="0" role="button" data-index="2" aria-label="فتح صورة إضافية">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop&q=80" 
+                         alt="كلبان لطيفان يلعبان معاً بسعادة" 
+                         loading="lazy" 
+                         decoding="async"
+                         width="600" 
+                         height="400">
+                    <div class="reveal-overlay">
+                        <span class="reveal-title">Happy Pups</span>
+                        <span class="reveal-date">November 2025</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p class="footer-text">ذكريات لا تتنسى ❤️</p>
+            <p class="footer-sub">Memories that last forever</p>
+        </footer>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عارض الصور" hidden>
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق عارض الصور">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="الصورة السابقة">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="الصورة التالية">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="lightbox-image-container">
+                <img class="lightbox-image" id="lightboxImage" src="" alt="" loading="eager">
+                <div class="lightbox-info">
+                    <h2 class="lightbox-title" id="lightboxTitle"></h2>
+                    <p class="lightbox-date" id="lightboxDate"></p>
+                </div>
+            </div>
+
+            <div class="lightbox-counter" id="lightboxCounter" aria-live="polite"></div>
+        </div>
     </div>
 
-    <div class="section">
-      <h2>البند (3): المقابل المالي وآلية الدفع</h2>
-      <p>القيمة الإجمالية للمشروع: (............................... جنيه / دولار / ريال)</p>
-      <p>ويتم الدفع على ثلاث دفعات على النحو التالي:</p>
-      <ul>
-        <li>الدفعة الأولى (عند الاتفاق وبدء التنفيذ): .............</li>
-        <li>الدفعة الثانية (في منتصف المشروع بعد تسليم جزء من العمل): .............</li>
-        <li>الدفعة الثالثة (عند تسليم المشروع النهائي والموافقة عليه) :.............</li>
-      </ul>
-      <p>جميع الدفعات تُحول عبر الوسيلة المتفق عليها (تحويل بنكي – فودافون كاش – بايبال – منصة العمل الحر ... إلخ).
-ولا يلتزم الطرف الثاني بتسليم الملفات النهائية إلا بعد استلام كامل المبلغ.</p>
-    </div>
-
-    <div class="section">
-      <h2>البند (4): الالتزامات</h2>
-      <p><strong>التزامات الطرف الأول (العميل):</strong></p>
-      <ul>
-        <li>تزويد الطرف الثاني بجميع التفاصيل والمستندات المطلوبة لإنجاز العمل.</li>
-        <li>الالتزام بمواعيد الدفع حسب الجدول المحدد.</li>
-        <li>عدم طلب تعديلات جوهرية خارج نطاق الاتفاق الأصلي إلا باتفاق إضافي مكتوب.</li>
-      </ul>
-      <p><strong>التزامات الطرف الثاني (الفريلانسر):</strong></p>
-      <ul>
-        <li>تنفيذ المشروع بالجودة والمواصفات المطلوبة</li>
-        <li>الالتزام بالمدة الزمنية المتفق عليها.</li>
-        <li>الحفاظ على سرية بيانات الطرف الأول وعدم مشاركتها مع أي طرف آخر.</li>
-        <li>تقديم التحديثات والتقارير حول تقدم العمل عند الطلب.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>البند (5): التعديلات والمراجعات</h2>
-      <p>يحق للطرف الأول طلب تعديلات معقولة خلال فترة المراجعة، بشرط ألا تتعارض مع المتفق عليه في بداية المشروع.
-أي تغييرات إضافية جوهرية تُحتسب كمشروع جديد أو خدمة إضافية.</p>
-    </div>
-
-    <div class="section">
-      <h2>البند (6): حقوق الملكية الفكرية</h2>
-      <p>جميع حقوق العمل تنتقل للطرف الأول بعد استلام الدفعة الأخيرة. ويحق للطرف الثاني عرض العمل ضمن معرض أعماله إلا إذا تم الاتفاق خلاف ذلك.</p>
-    </div>
-
-    <div class="section">
-      <h2>البند (7): إنهاء العقد</h2>
-      <p>يحق لأي طرف إنهاء العقد عند إخلال الطرف الآخر ببنوده بعد إخطار رسمي.</p>
-      <ul>
-        <li>إن تم إنهاء العقد من قبل العميل بعد بدء التنفيذ، تُخصم الدفعة الأولى كمقابل لما تم إنجازه.</li>
-        <li>إن تم الإنهاء من قبل الفريلانسر دون مبرر، تُعاد الدفعة الأولى للعميل.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>البند (8): حل النزاعات</h2>
-     <p>في حال وقوع أي خلاف أو نزاع بين الطرفين، يتم أولًا محاولة حله وديًا خلال 10 أيام.
-وفي حال تعذر الحل الودي، يُحال النزاع إلى الجهات المختصة في بلد إقامة الطرف الأول ما لم يتم الاتفاق على غير ذلك.</p>
-    </div>
-
-    <div class="section">
-      <h2>البند (9): أحكام عامة</h2>
-      <ul>
-        <li>يُعتبر التواصل عبر البريد الإلكتروني أو الرسائل الرسمية وسيلة موثوقة للإشعارات.</li>
-        <li>هذا العقد يشمل جميع البنود السابقة وأي مرفقات لاحقة متفق عليها بين الطرفين.</li>
-        <li>يجوز تعديل أو إضافة بنود جديدة بموافقة كتابية من الطرفين.</li>
-      </ul>
-    </div>
-
-    <div class="signature">
-      <div class="sig">
-        <h3>الطرف الأول (العميل)</h3>
-        <p>الاسم: <span class="fill"></span></p>
-        <p>التوقيع: <span class="fill"></span></p>
-        <p>التاريخ: ____ / ____ / ______</p>
-      </div>
-      <div class="sig">
-        <h3>الطرف الثاني (الفريلانسر)</h3>
-        <p>الاسم: <span class="fill"></span></p>
-        <p>التوقيع: <span class="fill"></span></p>
-        <p>التاريخ: ____ / ____ / ______</p>
-      </div>
-    </div>
-
-    <div class="notes">
-      <h2>📘 إرشادات ونصائح للطرفين</h2>
-      <p><strong>🔹 للطرف الثاني (الفريلانسر):</strong></p>
-      <ul>
-        <li>احرص على توثيق جميع المراسلات كتابيًا (واتساب أو إيميل).</li>
-        <li>لا تبدأ التنفيذ إلا بعد استلام الدفعة الأولى.</li>
-        <li>كن واضحًا في تحديد عدد التعديلات المجانية لتجنب الخلافات.</li>
-        <li>احتفظ بنسخة موقعة من العقد.</li>
-      </ul>
-      <p><strong>🔹 للطرف الأول (العميل):</strong></p>
-      <ul>
-        <li>تأكد من تحديد المطلوب بالتفصيل (المدة، المحتوى، النمط).</li>
-        <li>التزم بمواعيد الدفع لتشجيع الطرف الثاني على التسليم في الوقت.</li>
-        <li>لا تطلب تعديلات خارج الاتفاق إلا بعقد جديد.</li>
-        <li>اختر الفريلانسر بناءً على سابقة أعمال وتقييمات موثوقة.</li>
-      </ul>
-    </div>
-  </div>
+    <script src="app.js"></script>
 </body>
 </html>
